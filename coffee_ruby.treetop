@@ -1,0 +1,13 @@
+grammar CoffeeRuby
+  rule class
+    ("class " [a-zA-Z]+ " ->\n" method*)*
+  end
+
+  rule method
+    "  def " [a-zA-Z_]+ " ->\n" ("    " expression)+
+  end
+
+  rule expression
+    .*
+  end
+end

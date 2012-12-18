@@ -1,0 +1,3 @@
+class Klass ->
+  def sample_instance_method ->
+    true
